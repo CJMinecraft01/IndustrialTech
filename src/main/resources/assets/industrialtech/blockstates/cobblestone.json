@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "type=single_compressed": { "model":"industrialtech:single_compressed_cobblestone" },
+        "type=double_compressed": { "model":"industrialtech:double_compressed_cobblestone" },
+        "type=triple_compressed": { "model":"industrialtech:triple_compressed_cobblestone" },
+        "type=quadruple_compressed": { "model":"industrialtech:quadruple_compressed_cobblestone" },
+        "type=pentuple_compressed": { "model":"industrialtech:pentuple_compressed_cobblestone" },
+        "type=sextuple_compressed": { "model":"industrialtech:sextuple_compressed_cobblestone" },
+        "type=septuple_compressed": { "model":"industrialtech:septuple_compressed_cobblestone" },
+        "type=octuple_compressed": { "model":"industrialtech:octuple_compressed_cobblestone" }
+    }
+}

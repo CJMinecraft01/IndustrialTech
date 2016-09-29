@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "industrialtech:items/nickel_sword"
+    }
+}

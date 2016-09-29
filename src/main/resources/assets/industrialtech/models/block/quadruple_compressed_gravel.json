@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "industrialtech:blocks/gravel_quadruple_compressed"
+    }
+}

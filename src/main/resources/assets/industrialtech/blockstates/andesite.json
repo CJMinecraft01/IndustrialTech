@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "type=single_compressed": { "model":"industrialtech:single_compressed_andesite" },
+        "type=double_compressed": { "model":"industrialtech:double_compressed_andesite" },
+        "type=triple_compressed": { "model":"industrialtech:triple_compressed_andesite" },
+        "type=quadruple_compressed": { "model":"industrialtech:quadruple_compressed_andesite" },
+        "type=pentuple_compressed": { "model":"industrialtech:pentuple_compressed_andesite" },
+        "type=sextuple_compressed": { "model":"industrialtech:sextuple_compressed_andesite" },
+        "type=septuple_compressed": { "model":"industrialtech:septuple_compressed_andesite" },
+        "type=octuple_compressed": { "model":"industrialtech:octuple_compressed_andesite" }
+    }
+}

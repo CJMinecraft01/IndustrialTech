@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "type=single_compressed": { "model":"industrialtech:single_compressed_sand" },
+        "type=double_compressed": { "model":"industrialtech:double_compressed_sand" },
+        "type=triple_compressed": { "model":"industrialtech:triple_compressed_sand" },
+        "type=quadruple_compressed": { "model":"industrialtech:quadruple_compressed_sand" },
+        "type=pentuple_compressed": { "model":"industrialtech:pentuple_compressed_sand" },
+        "type=sextuple_compressed": { "model":"industrialtech:sextuple_compressed_sand" },
+        "type=septuple_compressed": { "model":"industrialtech:septuple_compressed_sand" },
+        "type=octuple_compressed": { "model":"industrialtech:octuple_compressed_sand" }
+    }
+}

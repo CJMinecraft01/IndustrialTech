@@ -1,0 +1,16 @@
+[
+{
+  "modid": "industrialtech",
+  "name": "IndustrialTech",
+  "description": "A technology mod designed to do all you've ever wanted.",
+  "version": "0.3.0",
+  "mcversion": "1.10.2",
+  "url": "http://cjminecraft.theclever.me",
+  "updateUrl": "",
+  "authorList": ["CJMinecraft"],
+  "credits": "Awesome subscribers!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

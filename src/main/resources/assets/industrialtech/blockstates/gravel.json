@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "type=single_compressed": { "model":"industrialtech:single_compressed_gravel" },
+        "type=double_compressed": { "model":"industrialtech:double_compressed_gravel" },
+        "type=triple_compressed": { "model":"industrialtech:triple_compressed_gravel" },
+        "type=quadruple_compressed": { "model":"industrialtech:quadruple_compressed_gravel" },
+        "type=pentuple_compressed": { "model":"industrialtech:pentuple_compressed_gravel" },
+        "type=sextuple_compressed": { "model":"industrialtech:sextuple_compressed_gravel" },
+        "type=septuple_compressed": { "model":"industrialtech:septuple_compressed_gravel" },
+        "type=octuple_compressed": { "model":"industrialtech:octuple_compressed_gravel" }
+    }
+}

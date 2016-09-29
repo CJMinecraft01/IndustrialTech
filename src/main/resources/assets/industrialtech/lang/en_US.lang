@@ -1,0 +1,217 @@
+item.ingot.copper.name=Copper Ingot
+item.ingot.silver.name=Silver Ingot
+item.ingot.tin.name=Tin Ingot
+item.ingot.zinc.name=Zinc Ingot
+item.ingot.lead.name=Lead Ingot
+item.ingot.nickel.name=Nickel Ingot
+
+item.nugget.copper.name=Copper Nugget
+item.nugget.silver.name=Silver Nugget
+item.nugget.tin.name=Tin Nugget
+item.nugget.zinc.name=Zinc Nugget
+item.nugget.lead.name=Lead Nugget
+item.nugget.nickel.name=Nickel Nugget
+
+item.copper_helmet.name=Copper Helmet
+item.silver_helmet.name=Silver Helmet
+item.tin_helmet.name=Tin Helmet
+item.zinc_helmet.name=Zinc Helmet
+item.lead_helmet.name=Lead Helmet
+item.nickel_helmet.name=Nickel Helmet
+
+item.copper_chestplate.name=Copper Chestplate
+item.silver_chestplate.name=Silver Chestplate
+item.tin_chestplate.name=Tin Chestplate
+item.zinc_chestplate.name=Zinc Chestplate
+item.lead_chestplate.name=Lead Chestplate
+item.nickel_chestplate.name=Nickel Chestplate
+
+item.copper_leggings.name=Copper Leggings
+item.silver_leggings.name=Silver Leggings
+item.tin_leggings.name=Tin Leggings
+item.zinc_leggings.name=Zinc Leggings
+item.lead_leggings.name=Lead Leggings
+item.nickel_leggings.name=Nickel Leggings
+
+item.copper_boots.name=Copper Boots
+item.silver_boots.name=Silver Boots
+item.tin_boots.name=Tin Boots
+item.zinc_boots.name=Zinc Boots
+item.lead_boots.name=Lead Boots
+item.nickel_boots.name=Nickel Boots
+
+item.copper_axe.name=Copper Axe
+item.silver_axe.name=Silver Axe
+item.tin_axe.name=Tin Axe
+item.zinc_axe.name=Zinc Axe
+item.lead_axe.name=Lead Axe
+item.nickel_axe.name=Nickel Axe
+
+item.copper_hoe.name=Copper Hoe
+item.silver_hoe.name=Silver Hoe
+item.tin_hoe.name=Tin Hoe
+item.zinc_hoe.name=Zinc Hoe
+item.lead_hoe.name=Lead Hoe
+item.nickel_hoe.name=Nickel Hoe
+
+item.copper_pickaxe.name=Copper Pickaxe
+item.silver_pickaxe.name=Silver Pickaxe
+item.tin_pickaxe.name=Tin Pickaxe
+item.zinc_pickaxe.name=Zinc Pickaxe
+item.lead_pickaxe.name=Lead Pickaxe
+item.nickel_pickaxe.name=Nickel Pickaxe
+
+item.copper_shovel.name=Copper Shovel
+item.silver_shovel.name=Silver Shovel
+item.tin_shovel.name=Tin Shovel
+item.zinc_shovel.name=Zinc Shovel
+item.lead_shovel.name=Lead Shovel
+item.nickel_shovel.name=Nickel Shovel
+
+item.copper_sword.name=Copper Sword
+item.silver_sword.name=Silver Sword
+item.tin_sword.name=Tin Sword
+item.zinc_sword.name=Zinc Sword
+item.lead_sword.name=Lead Sword
+item.nickel_sword.name=Nickel Sword
+
+item.heart.name=Heart
+item.soul_stealer.name=Soul Stealer
+
+item.chip.basic.name=Basic Chip
+item.chip.advanced.name=Advanced Chip
+item.wrench.name=Wrench
+
+tile.ore.copper.name=Copper Ore
+tile.ore.silver.name=Silver Ore
+tile.ore.tin.name=Tin Ore
+tile.ore.zinc.name=Zinc Ore
+tile.ore.lead.name=Lead Ore
+tile.ore.nickel.name=Nickel Ore
+
+tile.metal_compressed.copper.name=Block Of Copper
+tile.metal_compressed.silver.name=Block Of Silver
+tile.metal_compressed.tin.name=Block Of Tin
+tile.metal_compressed.zinc.name=Block Of Zinc
+tile.metal_compressed.lead.name=Block Of Lead
+tile.metal_compressed.nickel.name=Block Of Nickel
+
+tile.mini_chest.name=Mini Chest
+
+tile.cobblestone.single_compressed.name=Single Compressed Cobblestone
+tile.cobblestone.double_compressed.name=Double Compressed Cobblestone
+tile.cobblestone.triple_compressed.name=Triple Compressed Cobblestone
+tile.cobblestone.quadruple_compressed.name=Quadruple Compressed Cobblestone
+tile.cobblestone.pentuple_compressed.name=Pentuple Compressed Cobblestone
+tile.cobblestone.sextuple_compressed.name=Sextuple Compressed Cobblestone
+tile.cobblestone.septuple_compressed.name=Septuple Compressed Cobblestone
+tile.cobblestone.octuple_compressed.name=Octuple Compressed Cobblestone
+tile.granite.single_compressed.name=Single Compressed Granite
+tile.granite.double_compressed.name=Double Compressed Granite
+tile.granite.triple_compressed.name=Triple Compressed Granite
+tile.granite.quadruple_compressed.name=Quadruple Compressed Granite
+tile.granite.pentuple_compressed.name=Pentuple Compressed Granite
+tile.granite.sextuple_compressed.name=Sextuple Compressed Granite
+tile.granite.septuple_compressed.name=Septuple Compressed Granite
+tile.granite.octuple_compressed.name=Octuple Compressed Granite
+tile.diorite.single_compressed.name=Single Compressed Diorite
+tile.diorite.double_compressed.name=Double Compressed Diorite
+tile.diorite.triple_compressed.name=Triple Compressed Diorite
+tile.diorite.quadruple_compressed.name=Quadruple Compressed Diorite
+tile.diorite.pentuple_compressed.name=Pentuple Compressed Diorite
+tile.diorite.sextuple_compressed.name=Sextuple Compressed Diorite
+tile.diorite.septuple_compressed.name=Septuple Compressed Diorite
+tile.diorite.octuple_compressed.name=Octuple Compressed Diorite
+tile.andesite.single_compressed.name=Single Compressed Andesite
+tile.andesite.double_compressed.name=Double Compressed Andesite
+tile.andesite.triple_compressed.name=Triple Compressed Andesite
+tile.andesite.quadruple_compressed.name=Quadruple Compressed Andesite
+tile.andesite.pentuple_compressed.name=Pentuple Compressed Andesite
+tile.andesite.sextuple_compressed.name=Sextuple Compressed Andesite
+tile.andesite.septuple_compressed.name=Septuple Compressed Andesite
+tile.andesite.octuple_compressed.name=Octuple Compressed Andesite
+tile.dirt.single_compressed.name=Single Compressed Dirt
+tile.dirt.double_compressed.name=Double Compressed Dirt
+tile.dirt.triple_compressed.name=Triple Compressed Dirt
+tile.dirt.quadruple_compressed.name=Quadruple Compressed Dirt
+tile.dirt.pentuple_compressed.name=Pentuple Compressed Dirt
+tile.dirt.sextuple_compressed.name=Sextuple Compressed Dirt
+tile.dirt.septuple_compressed.name=Septuple Compressed Dirt
+tile.dirt.octuple_compressed.name=Octuple Compressed Dirt
+tile.sand.single_compressed.name=Single Compressed Sand
+tile.sand.double_compressed.name=Double Compressed Sand
+tile.sand.triple_compressed.name=Triple Compressed Sand
+tile.sand.quadruple_compressed.name=Quadruple Compressed Sand
+tile.sand.pentuple_compressed.name=Pentuple Compressed Sand
+tile.sand.sextuple_compressed.name=Sextuple Compressed Sand
+tile.sand.septuple_compressed.name=Septuple Compressed Sand
+tile.sand.octuple_compressed.name=Octuple Compressed Sand
+tile.gravel.single_compressed.name=Single Compressed Gravel
+tile.gravel.double_compressed.name=Double Compressed Gravel
+tile.gravel.triple_compressed.name=Triple Compressed Gravel
+tile.gravel.quadruple_compressed.name=Quadruple Compressed Gravel
+tile.gravel.pentuple_compressed.name=Pentuple Compressed Gravel
+tile.gravel.sextuple_compressed.name=Sextuple Compressed Gravel
+tile.gravel.septuple_compressed.name=Septuple Compressed Gravel
+tile.gravel.octuple_compressed.name=Octuple Compressed Gravel
+tile.netherrack.single_compressed.name=Single Compressed Netherrack
+tile.netherrack.double_compressed.name=Double Compressed Netherrack
+tile.netherrack.triple_compressed.name=Triple Compressed Netherrack
+tile.netherrack.quadruple_compressed.name=Quadruple Compressed Netherrack
+tile.netherrack.pentuple_compressed.name=Pentuple Compressed Netherrack
+tile.netherrack.sextuple_compressed.name=Sextuple Compressed Netherrack
+tile.netherrack.septuple_compressed.name=Septuple Compressed Netherrack
+tile.netherrack.octuple_compressed.name=Octuple Compressed Netherrack
+tile.soulsand.single_compressed.name=Single Compressed Soul Sand
+tile.soulsand.double_compressed.name=Double Compressed Soul Sand
+tile.soulsand.triple_compressed.name=Triple Compressed Soul Sand
+tile.soulsand.quadruple_compressed.name=Quadruple Compressed Soul Sand
+tile.soulsand.pentuple_compressed.name=Pentuple Compressed Soul Sand
+tile.soulsand.sextuple_compressed.name=Sextuple Compressed Soul Sand
+tile.soulsand.septuple_compressed.name=Septuple Compressed Soul Sand
+tile.soulsand.octuple_compressed.name=Octuple Compressed Soul Sand
+
+tile.generator.furnace.name=Furnace Generator
+tile.generator.food.name=Food Generator
+tile.generator.redstone.name=Redstone Generator
+tile.generator_frame.name=Generator Frame
+
+tile.energy_pipe.name=Energy Pipe
+
+itemGroup.ititems=Industrial Tech Items
+itemGroup.itblocks=Industrial Tech Blocks
+
+container.minichest=Mini Chest
+container.generator.furnace=Furnace Generator
+container.generator.food=Food Generator
+container.generator.redstone=Redstone Generator
+
+industrialtech.metal.beacon=Usable for beacon bases
+industrialtech.compressed.stackInfo1=Stack Contains 
+industrialtech.compressed.stackInfo2=Contains 
+industrialtech.compressed.stackInfoClose1=Let go of 
+industrialtech.compressed.stackInfoClose2= for less stack info
+industrialtech.compressed.showStackInfo1=Hold 
+industrialtech.compressed.showStackInfo2= for stack info
+industrialtech.ingot.beacon=Usable for beacon payment
+industrialtech.durability=Durability
+industrialtech.item=Item
+industrialtech.noitem=No Item
+industrialtech.rf=RF
+industrialtech.rftick=RF/t
+industrialtech.cooldown=Cooldown
+industrialtech.timeleft=Time Left
+industrialtech.rfproduced= RF Produced
+industrialtech.duration=Duration
+industrialtech.rfoutput=RF Output
+industrialtech.update.connection_failed=Industrial Tech Update Server connection failed!
+industrialtech.update.outofdate=Your version of industrial tech is out of date!
+industrialtech.heart.tooltip=Heals the player
+industrialtech.soul_stealer.tooltip=Steals the hearts of entities
+
+achievement.firstjoin=Thank you for installing!
+achievement.firstjoin.desc=Install Industrial Tech
+achievement.tinman=Tin Man
+achievement.tinman.desc=Wear all tin armor!
+achievement.gotthepower=I got the power!
+achievement.gotthepower.desc=Craft a generator

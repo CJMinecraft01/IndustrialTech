@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "industrialtech:blocks/sand_quadruple_compressed"
+    }
+}

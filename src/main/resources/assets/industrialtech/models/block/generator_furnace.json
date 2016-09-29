@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"particle": "industrialtech:blocks/generator_side",
+        "up": "industrialtech:blocks/generator_side",
+		"down": "industrialtech:blocks/generator_side",
+		"north": "industrialtech:blocks/generator_furnace",
+		"south": "industrialtech:blocks/generator_side",
+		"east": "industrialtech:blocks/generator_side",
+		"west": "industrialtech:blocks/generator_side"
+    }
+}
