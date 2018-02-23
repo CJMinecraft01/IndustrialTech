@@ -11,6 +11,8 @@
   "credits": "The CJPack team for inspiration",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "useDependencyInformation": true,
+  "requiredMods": ["cjcore"]
+  "dependencies": ["cjcore"]
 }
 ]
