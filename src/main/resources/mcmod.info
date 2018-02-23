@@ -2,13 +2,13 @@
 {
   "modid": "industrialtech",
   "name": "IndustrialTech",
-  "description": "A technology mod designed to do all you've ever wanted.",
-  "version": "0.3.0",
-  "mcversion": "1.10.2",
-  "url": "http://cjminecraft.theclever.me",
+  "description": "Revolutionise your world.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
   "updateUrl": "",
   "authorList": ["CJMinecraft"],
-  "credits": "Awesome subscribers!",
+  "credits": "The CJPack team for inspiration",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

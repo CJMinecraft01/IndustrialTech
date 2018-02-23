@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "industrialtech:blocks/andesite_single_compressed"
-    }
-}

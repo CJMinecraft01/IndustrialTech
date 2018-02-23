@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "industrialtech:blocks/soulsand_octuple_compressed"
-    }
-}
