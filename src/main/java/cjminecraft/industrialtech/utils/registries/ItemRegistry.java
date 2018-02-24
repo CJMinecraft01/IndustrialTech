@@ -23,6 +23,9 @@ public class ItemRegistry {
                 if (field.isAnnotationPresent(RegisterItem.class) && field.getType().isAssignableFrom(Item.class)) {
                     RegisterItem details = field.getAnnotation(RegisterItem.class);
                     Item item = (Item) field.get(null);
+                    if(item == null) {
+                        item = (Item) field.getType().newInstance();
+                    }
                     item.setRegistryName(new ResourceLocation(IndustrialTech.MODID, details.registryName()));
                     if(!details.unlocalizedName().isEmpty())
                         item.setUnlocalizedName(details.unlocalizedName());
