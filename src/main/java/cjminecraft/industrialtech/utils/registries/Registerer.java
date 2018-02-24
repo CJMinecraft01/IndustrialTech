@@ -48,7 +48,15 @@ public class Registerer {
                         block = (Block) field.getType().newInstance();
                         field.set(null, block);
                     }
-                    Item item = new ItemBlock(block);
+
+                    ItemBlock item;
+                    try {
+                        Class clazz = Class.forName(details.itemBlockClassName());
+                        item = (ItemBlock) clazz.getDeclaredConstructor(Block.class).newInstance(block);
+                    } catch (ClassNotFoundException e) {
+                        IndustrialTech.LOGGER.warn("Could not register custom item block as class did not exist. " + details.itemBlockClassName());
+                        continue;
+                    }
 
                     item.setRegistryName(new ResourceLocation(IndustrialTech.MODID, details.registryName()));
                     if (!details.unlocalizedName().isEmpty())
