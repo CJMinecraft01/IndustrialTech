@@ -25,6 +25,7 @@ public class ItemRegistry {
                     Item item = (Item) field.get(null);
                     if(item == null) {
                         item = (Item) field.getType().newInstance();
+                        field.set(null, item);
                     }
                     item.setRegistryName(new ResourceLocation(IndustrialTech.MODID, details.registryName()));
                     if(!details.unlocalizedName().isEmpty())
