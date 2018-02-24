@@ -15,7 +15,7 @@ import java.lang.reflect.Field;
 public class ItemRegistry {
 
     @SubscribeEvent
-    public void onRegisterEvent(RegistryEvent.Register<Item> event) {
+    public static void onRegisterEvent(RegistryEvent.Register<Item> event) {
         IndustrialTech.LOGGER.info("Searching for items to register");
         int registeredItems = 0;
         try {

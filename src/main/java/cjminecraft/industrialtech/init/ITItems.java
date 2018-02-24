@@ -6,6 +6,6 @@ import net.minecraft.item.Item;
 public class ITItems {
 
     @RegisterItem(registryName = "test")
-    public static Item test;
+    public static Item test = new Item();
 
 }

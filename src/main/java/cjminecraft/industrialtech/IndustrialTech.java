@@ -29,17 +29,17 @@ public class IndustrialTech {
 
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event) {
-
+        proxy.preInit();
     }
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event) {
-
+        proxy.init();
     }
 
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
-
+        proxy.postInit();
     }
 
 }
