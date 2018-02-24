@@ -7,12 +7,14 @@ import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.lang.reflect.Field;
 
 @Mod.EventBusSubscriber
 public class ItemRegistry {
 
+    @SubscribeEvent
     public void onRegisterEvent(RegistryEvent.Register<Item> event) {
         IndustrialTech.LOGGER.info("Searching for items to register");
         int registeredItems = 0;
