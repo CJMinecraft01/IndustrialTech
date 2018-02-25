@@ -3,6 +3,7 @@ package cjminecraft.industrialtech.utils.registries;
 import cjminecraft.industrialtech.IndustrialTech;
 import cjminecraft.industrialtech.init.ITBlocks;
 import cjminecraft.industrialtech.init.ITItems;
+import cjminecraft.industrialtech.utils.registries.annotations.RegisterBlock;
 import cjminecraft.industrialtech.utils.registries.annotations.RegisterItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -74,6 +75,34 @@ public class Registerer {
             IndustrialTech.LOGGER.catching(e);
         }
         IndustrialTech.LOGGER.info("Successfully registered " + registeredItems + " items!");
+    }
+
+    @SubscribeEvent
+    public static void onBlockRegister(RegistryEvent.Register<Block> event) {
+        IndustrialTech.LOGGER.info("Searching for blocks to register");
+        int registeredBlocks = 0;
+        try {
+            for (Field field : ITBlocks.class.getDeclaredFields()) {
+                if (field.isAnnotationPresent(RegisterBlock.class) && field.getType().isAssignableFrom(Block.class)) {
+                    RegisterBlock details = field.getAnnotation(RegisterBlock.class);
+                    Block block = (Block) field.get(null);
+                    if (block == null) {
+                        block = (Block) field.getType().newInstance();
+                        field.set(null, block);
+                    }
+                    block.setRegistryName(new ResourceLocation(IndustrialTech.MODID, details.registryName()));
+                    if (!details.unlocalizedName().isEmpty())
+                        block.setUnlocalizedName(details.unlocalizedName());
+                    else
+                        block.setUnlocalizedName(details.registryName());
+                    event.getRegistry().register(block);
+                    registeredBlocks++;
+                }
+            }
+        } catch (Exception e) {
+            IndustrialTech.LOGGER.catching(e);
+        }
+        IndustrialTech.LOGGER.info("Successfully registered " + registeredBlocks + " blocks!");
     }
 
 }
