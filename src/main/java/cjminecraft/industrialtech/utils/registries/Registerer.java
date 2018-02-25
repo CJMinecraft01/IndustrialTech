@@ -56,6 +56,9 @@ public class Registerer {
                     } catch (ClassNotFoundException e) {
                         IndustrialTech.LOGGER.warn("Could not register custom item block as class did not exist. " + details.itemBlockClassName());
                         continue;
+                    } catch (Exception e) {
+                        IndustrialTech.LOGGER.catching(e);
+                        continue;
                     }
 
                     item.setRegistryName(new ResourceLocation(IndustrialTech.MODID, details.registryName()));
