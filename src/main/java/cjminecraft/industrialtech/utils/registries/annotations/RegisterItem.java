@@ -10,6 +10,4 @@ public @interface RegisterItem {
 
     String unlocalizedName() default "";
 
-    String itemBlockClassName() default "net.minecraft.item.ItemBlock";
-
 }

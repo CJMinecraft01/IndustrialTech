@@ -9,6 +9,6 @@ public class ITBlocks {
 
     @RegisterBlock(registryName = "photon_generator")
     @RegisterItem(registryName = "photon_generator")
-    public static Block PHOTON_GENERATOR;
+    public static BlockPhotonGenerator PHOTON_GENERATOR;
 
 }

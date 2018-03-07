@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 
 public class BlockPhotonGenerator extends BlockContainer {
 
-    protected BlockPhotonGenerator() {
+    public BlockPhotonGenerator() {
         super(Material.IRON);
     }
 
