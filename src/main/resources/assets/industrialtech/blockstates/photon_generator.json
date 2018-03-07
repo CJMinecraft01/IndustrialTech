@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "industrialtech:machine_base", "x": 270 },
+        "facing=east": { "model": "industrialtech:machine_base", "x": 270, "y": 90 },
+        "facing=south": { "model": "industrialtech:machine_base", "x": 90 },
+        "facing=west": { "model": "industrialtech:machine_base", "x": 90, "y": 90 },
+        "facing=up": { "model": "industrialtech:machine_base", "x": 180 },
+        "facing=down": { "model": "industrialtech:machine_base" }
+    }
+}

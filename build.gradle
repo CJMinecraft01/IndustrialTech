@@ -27,7 +27,26 @@ minecraft {
     mappings = "snapshot_20171003"
 }
 
+repositories {
+    maven {
+        name = "CoFH Maven"
+        url = "http://maven.covers1624.net"
+    }
+    maven {
+        name "Tesla"
+        url 'http://maven.mcmoddev.com'
+    }
+
+    maven {
+        name = "ic2"
+        url = "http://maven.ic2.player.to/"
+    }
+}
+
 dependencies {
+    compile "net.darkhax.tesla:Tesla-1.12.2:1.0.63"
+    compile 'net.industrial-craft:industrialcraft-2:2.8.16-ex112:api'
+    deobfCompile "cofh:RedstoneFlux:1.12-2.0.1.2:universal"
     compile files('C:/Users/Callum/Coding/Minecraft/Minecraft Mods/CJMinecraft Core/1.12.2/build/libs/cjcore-1.12-0.0.3.2-deobf.jar')
 }
 

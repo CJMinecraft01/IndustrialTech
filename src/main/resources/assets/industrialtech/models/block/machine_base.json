@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "industrialtech:blocks/machine",
+        "side": "industrialtech:blocks/machine_small",
+        "y": "industrialtech:blocks/machine"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 4.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 5.0 ] },
+                "east": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 5.0 ] },
+                "south": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 5.0 ] },
+                "west": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 5.0 ] },
+                "up": { "texture": "#y", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#y", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}
