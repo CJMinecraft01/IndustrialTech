@@ -13,6 +13,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -75,17 +76,7 @@ public class BlockPhotonGenerator extends BlockContainer {
         IBlockState actualState = blockAccess.getBlockState(pos.offset(side));
         Block block = actualState.getBlock();
 
-        if (this == ITBlocks.PHOTON_GENERATOR) {
-            if (currentState != actualState) {
-                return true;
-            }
-
-            if (block == this) {
-                return false;
-            }
-        }
-
-        return block == this ? false : super.shouldSideBeRendered(currentState, blockAccess, pos, side);
+        return block != this;
     }
 
     @Override
@@ -126,6 +117,11 @@ public class BlockPhotonGenerator extends BlockContainer {
     @Override
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         player.openGui(IndustrialTech.instance, GuiHandler.PHOTON_GENERATOR, world, pos.getX(), pos.getY(), pos.getZ());
-        return super.onBlockActivated(world, pos, state, player, hand, facing, hitX, hitY, hitZ);
+        return true;
+    }
+
+    @Override
+    public EnumBlockRenderType getRenderType(IBlockState state) {
+        return EnumBlockRenderType.MODEL;
     }
 }

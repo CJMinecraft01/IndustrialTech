@@ -26,7 +26,6 @@ public class GuiPhotonGenerator extends GuiBase {
     @Override
     public void initGui() {
         super.initGui();
-        IndustrialTech.LOGGER.info("NEW SIZE");
-        addElement(new ElementEnergyBar(this, 7, 21, 18, 53).shouldSync(this.te.getPos(), null));
+        addElement(new ElementEnergyBar(this, 7, 12, 18, 53).shouldSync(this.te.getPos(), null));
     }
 }
