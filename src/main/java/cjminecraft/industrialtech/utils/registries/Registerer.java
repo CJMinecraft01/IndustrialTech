@@ -6,10 +6,14 @@ import cjminecraft.industrialtech.init.ITItems;
 import cjminecraft.industrialtech.utils.registries.annotations.RegisterBlock;
 import cjminecraft.industrialtech.utils.registries.annotations.RegisterItem;
 import cjminecraft.industrialtech.utils.registries.annotations.RegisterItemBlock;
+import cjminecraft.industrialtech.utils.registries.annotations.RegisterRender;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -105,6 +109,53 @@ public class Registerer {
             }
         }
         IndustrialTech.LOGGER.info("Successfully registered " + registeredBlocks + " blocks!");
+    }
+
+    @SubscribeEvent
+    public static void onModelRegister(ModelRegistryEvent event) {
+        IndustrialTech.LOGGER.info("Searching for items to register renders for");
+        int registeredItems = 0;
+        for (Field field : ITItems.class.getDeclaredFields()) {
+            if (field.isAnnotationPresent(RegisterRender.class)) try {
+                RegisterRender details = field.getAnnotation(RegisterRender.class);
+                Item item = (Item) field.get(null);
+                if (item != null) {
+                    if (details.hasVariants())
+                        for (int meta = 0; meta < details.variants().length; meta++)
+                            ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(new ResourceLocation(IndustrialTech.MODID, details.variants()[meta]), "inventory"));
+                    else
+                        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+                    registeredItems++;
+                } else {
+                    IndustrialTech.LOGGER.error("Unable to register renders for item: " + field.getName() + "! The item cannot be null!");
+                }
+            } catch (Exception e) {
+                IndustrialTech.LOGGER.error("Unable to register renders for item: " + field.getName() + "! The following error was thrown:");
+                IndustrialTech.LOGGER.catching(Level.ERROR, e);
+            }
+        }
+
+        for (Field field : ITBlocks.class.getDeclaredFields()) {
+            if (field.isAnnotationPresent(RegisterRender.class)) try {
+                RegisterRender details = field.getAnnotation(RegisterRender.class);
+                Block block = (Block) field.get(null);
+                if(block != null) {
+                    Item item = Item.getItemFromBlock(block);
+                    if(details.hasVariants())
+                        for(int meta = 0; meta < details.variants().length; meta++)
+                            ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(new ResourceLocation(IndustrialTech.MODID, details.variants()[meta]), "inventory"));
+                    else
+                        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+                } else {
+                    IndustrialTech.LOGGER.error("Unable to register renders for block: " + field.getName() + "! The block cannot be null!");
+                }
+                registeredItems++;
+            } catch (Exception e) {
+                IndustrialTech.LOGGER.error("Unable to register renders for item block: " + field.getName() + "! The following error was thrown:");
+                IndustrialTech.LOGGER.catching(Level.ERROR, e);
+            }
+        }
+        IndustrialTech.LOGGER.info("Successfully registered renders for " + registeredItems + " items!");
     }
 
 }
